@@ -4,7 +4,21 @@ All notable changes to this project will be documented here.
 
 ---
 
-## v1.4 Persistent Settings
+## Upcoming
+
+### Planned
+
+- Recent calculation records.
+- Keep saved records for 30 days.
+- Optional notes for each saved order record.
+- Daily and weekly summaries.
+
+---
+
+## v1.4.0 Persistent Settings
+
+### Added
+- Automatically restore saved settings when the page loads.
 
 ### Changed
 - Refactored saved data from a single `price` value to a `settings` object.
@@ -12,7 +26,7 @@ All notable changes to this project will be documented here.
 
 ---
 
-## v1.3 Student Count Update
+## v1.3.0 Student Count Update
 
 ### Added
 - Display total number of students.
@@ -24,7 +38,7 @@ All notable changes to this project will be documented here.
 
 ---
 
-## v1.2 Auto Calculation
+## v1.2.0 Auto Calculation
 
 ### Added
 - Remember lunch price using localStorage.
@@ -33,7 +47,7 @@ All notable changes to this project will be documented here.
 
 ---
 
-## v1.1 User Experience Update
+## v1.1.0 User Experience Update
 
 ### Added
 - Bento calculator.

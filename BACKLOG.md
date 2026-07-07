@@ -4,23 +4,44 @@ This document tracks future improvements and feature ideas for the Bento Calcula
 
 ---
 
-## High Priority
+## Next Release: v2.0.0 - Recent Records
 
-* [ ] Save daily calculation records.
-* [ ] Display today's calculation history.
-* [ ] Calculate today's total lunches and total cost.
-
----
-
-## Medium Priority
-
-* [ ] Improve mobile responsiveness.
-* [ ] Improve user interface design.
-* [ ] Add export to Excel.
+- [ ] Save each lunch calculation as an individual record.
+- [ ] Display recent saved records.
+- [ ] Keep records for 30 days.
+- [ ] Store record date and time.
+- [ ] Store student counts, lunch count, and total price.
 
 ---
 
-## Need User Feedback
+## v2.1.0 - Order Notes
 
-* [ ] Should the **Clear** button also clear saved settings?
+- [ ] Add optional notes to each saved record.
+- [ ] Allow notes to be written after the meal.
+- [ ] Keep notes attached to each individual order record.
+
+---
+
+## Future Releases
+
+### Statistics
+
+- [ ] Daily summary.
+- [ ] Weekly summary.
+- [ ] Weekly reimbursement report.
+
+### Export
+
+- [ ] Export records to Excel.
+
+### UI
+
+- [ ] Improve mobile responsiveness.
+- [ ] Improve user interface design.
+
+---
+
+## Waiting for User Feedback
+
+- [ ] Should the Clear button also remove saved settings?
 * [x] Extra lunches should **not** be remembered as a default setting.

@@ -1,57 +1,100 @@
 # Bento Calculator 🍱
 
-A simple web application built to help a cram school estimate the number of lunch boxes needed each day and calculate the total cost.
+A lightweight web application designed to help cram schools quickly calculate lunch orders before entering them into their official system.
 
-This project was created to solve a real-world problem for a friend who works at a cram school. Instead of manually calculating lunch orders every day, the application provides instant results as numbers are entered.
+This project was created to solve a real-world problem for a friend who works at a cram school. The tool helps staff calculate lunch quantities, estimate costs, remember common settings, and will continue evolving based on real user feedback.
+
+---
 
 ## 🌐 Live Demo
 
+**Live Website:**  
 https://hfchen1006.github.io/Bento-calculator/
 
-## ✨ Features
+---
 
-* Calculate the required number of lunch boxes.
-* Junior students count as **half a lunch**, rounded up using `Math.ceil()`.
-* Display the total number of students.
-* Calculate the total lunch cost.
-* Automatically update results while typing.
-* Clear input fields with one click.
-* Remember the last lunch price using `localStorage`.
+## ✨ Current Features
+
+- Calculate the required number of lunch boxes.
+- Junior students count as **half a lunch**, rounded up using `Math.ceil()`.
+- Display the total number of students.
+- Calculate the total lunch cost.
+- Automatically update results while typing.
+- Clear all input fields.
+- Save user settings with `localStorage`.
+- Automatically restore saved settings when the page loads.
+
+---
+
+## 🚀 Planned Features
+
+### Recent Records
+
+- Save each lunch calculation as an individual record.
+- Keep records for up to 30 days.
+- Display recent lunch order records.
+
+### Order Notes
+
+- Add optional notes to each saved order record.
+- Notes are written after the meal if needed.
+- Each order record has its own notes field.
+- Notes can be used to record:
+  - What was ordered
+  - Special meals
+  - Whether too much food was ordered
+  - Reminders for future orders
+
+### Future Improvements
+
+- Daily summary
+- Weekly summary
+- Weekly reimbursement report
+- Export records to Excel
+- Responsive mobile layout
+- UI improvements
+
+---
 
 ## 🛠️ Built With
 
-* HTML5
-* CSS3
-* JavaScript (Vanilla)
-* GitHub Pages
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- localStorage
+- Git
+- GitHub
+- GitHub Pages
 
-## 📌 Project Background
-
-This project is used internally by a cram school to simplify daily lunch ordering.
-
-It is also part of my learning journey in web development. I continue to improve the project by adding features based on real user feedback.
-
-## 🚀 Future Improvements
-
-* Store daily lunch records
-* Weekly lunch statistics
-* Weekly reimbursement report
-* Monthly summary
-* Export records to Excel
-* Responsive mobile layout
+---
 
 ## 📖 What I Learned
 
 Through this project I practiced:
 
-* DOM manipulation
-* Event listeners
-* JavaScript functions
-* Arrays and loops
-* `Math.ceil()`
-* `localStorage`
-* Git and GitHub workflow
-* GitHub Pages deployment
+- DOM manipulation
+- Event listeners
+- JavaScript Objects
+- Arrays
+- Functions
+- `Math.ceil()`
+- `JSON.stringify()`
+- `JSON.parse()`
+- `localStorage`
+- Git workflow
+- GitHub Pages deployment
+- Product requirement analysis
+- Version management using Semantic Versioning
+
+---
+
+## 📌 Project Philosophy
+
+This project is developed based on real user feedback.
+
+Every feature should solve a real workflow problem instead of being added only for practice.
+
+---
 
 ## 👨‍💻 Author
 
