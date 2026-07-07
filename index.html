@@ -38,9 +38,18 @@
         <input type="number" id="extraLunches" min="0" value="0">
       </label>
 
+      <label>
+        午餐/晚餐
+        <select id="mealType">
+          <option value="lunch">午餐</option>
+          <option value="dinner">晚餐</option>
+        </select>
+      </label>
+
       <div class="button-group">
         <button id="calculateBtn" type="button">計算</button>
         <button id="clearBtn" type="button">清除</button>
+        <button id="addRecordBtn" type="button">新增紀錄</button>
       </div>
     </section>
 
@@ -50,8 +59,15 @@
       <p>預計便當數量：<span id="totalLunches">0</span> 個</p>
       <p>預計總金額：$<span id="totalPrice">0</span></p>
     </section>
+
+    <section class="records">
+      <h2>最近紀錄</h2>
+        <div id="recordsList">
+          <p class="empty-message">目前還沒有紀錄。</p>
+        </div>
+    </section>
   </main>
 
-  <script src="script.js?v=1.4"></script>
+  <script src="script.js?v=2.0.0"></script>
 </body>
 </html>

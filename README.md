@@ -31,8 +31,9 @@ Instead, it serves as a lightweight workspace that helps staff:
 
 - Quickly calculate lunch orders.
 - Remember frequently used settings.
-- (Upcoming) Temporarily save lunch order records.
-- (Upcoming) Record optional notes for special lunch orders.
+- Save lunch order records.
+- Remember frequently used settings.
+- (Upcoming) Add notes to saved records.
 
 Every feature is added only after understanding the user's real workflow and solving a real problem.
 
@@ -48,16 +49,15 @@ Every feature is added only after understanding the user's real workflow and sol
 - Clear all input fields.
 - Save user settings with `localStorage`.
 - Automatically restore saved settings when the page loads.
+- Save each calculation as a recent record.
+- Display recent lunch order records.
+- Keep records after refreshing the page using `localStorage`.
+- Show the newest record at the top.
 
 ---
 
 ## 🚀 Planned Features
 
-### Recent Records
-
-- Save each lunch calculation as an individual record.
-- Keep records for up to 30 days.
-- Display recent lunch order records.
 
 ### Order Notes
 

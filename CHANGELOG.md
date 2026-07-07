@@ -4,14 +4,30 @@ All notable changes to this project will be documented here.
 
 ---
 
-## Upcoming
+## Unreleased
 
 ### Planned
 
-- Recent calculation records.
 - Keep saved records for 30 days.
 - Optional notes for each saved order record.
 - Daily and weekly summaries.
+
+---
+
+## v2.0.0 Recent Records
+
+### Added
+
+- Added Recent Records section.
+- Save each lunch calculation as an individual record.
+- Store saved records in localStorage.
+- Automatically restore saved records when the page loads.
+- Display newest records first.
+- Added record cards with meal type, student count, lunch count, and total price.
+
+### Changed
+
+- Clear form after adding a new record based on user feedback.
 
 ---
 

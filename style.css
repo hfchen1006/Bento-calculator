@@ -95,3 +95,59 @@ button:hover {
 #clearBtn:hover {
     background-color: #4b5563;
 }
+
+.records {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.records h2 {
+  margin-bottom: 15px;
+}
+
+.record-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background: #ffffff;
+}
+
+.record-header {
+  display: flex;
+  justify-content: space-between;
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.record-meal {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.record-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-top: 1px solid #eee;
+  font-size: 18px;
+}
+
+.record-icon {
+  font-size: 24px;
+  width: 32px;
+}
+
+.record-row p {
+  margin-top: 4px;
+  color: #666;
+  font-size: 14px;
+}
