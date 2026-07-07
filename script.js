@@ -14,6 +14,7 @@ const totalPriceResult = document.getElementById("totalPrice");
 
 const inputs = [seniorInput, juniorInput, teacherInput, priceInput, extraInput];
 
+
 function calculateLunches() {
   const seniorStudents = Number(seniorInput.value) || 0;
   const juniorStudents = Number(juniorInput.value) || 0;
@@ -38,16 +39,27 @@ function clearForm() {
   calculateLunches();
 }
 
-function savePrice() {
-  const price = priceInput.value;
-  localStorage.setItem("price", price);
+function saveSettings() {
+  const settings = {
+    price: priceInput.value,
+    defaultSeniorStudents: seniorInput.value,
+    defaultJuniorStudents: juniorInput.value,
+    defaultTeachers: teacherInput.value,
+  };
+
+  localStorage.setItem("settings", JSON.stringify(settings));
 }
 
-function loadSavedPrice() {
-  const savedPrice = localStorage.getItem("price");
-  if (savedPrice) {
-    priceInput.value = savedPrice;
+function loadSettings() {
+  const savedSettings = localStorage.getItem("settings");
+  if (savedSettings) {
+    const settings = JSON.parse(savedSettings);
+    priceInput.value = settings.price || "";
+    seniorInput.value = settings.defaultSeniorStudents || "";
+    juniorInput.value = settings.defaultJuniorStudents || "";
+    teacherInput.value = settings.defaultTeachers || "";
   }
+  calculateLunches();
 }
 
 calculateBtn.addEventListener("click", calculateLunches);
@@ -55,7 +67,8 @@ clearBtn.addEventListener("click", clearForm);
 
 inputs.forEach((input) => {
   input.addEventListener("input", calculateLunches);
+  input.addEventListener("input", saveSettings);
 });
 
-priceInput.addEventListener("input", savePrice);
-loadSavedPrice();
+loadSettings();
+

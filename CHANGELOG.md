@@ -4,6 +4,14 @@ All notable changes to this project will be documented here.
 
 ---
 
+## v1.4 Persistent Settings
+
+### Changed
+- Refactored saved data from a single `price` value to a `settings` object.
+- Used `JSON.stringify()` and `JSON.parse()` to store and load settings from localStorage.
+
+---
+
 ## v1.3 Student Count Update
 
 ### Added
@@ -16,7 +24,7 @@ All notable changes to this project will be documented here.
 
 ---
 
-## v1.2 Persistent Settings
+## v1.2 Auto Calculation
 
 ### Added
 - Remember lunch price using localStorage.
