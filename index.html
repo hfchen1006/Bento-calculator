@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>便當數量計算器</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>便當數量計算器</h1>
+    <p class="subtitle">小屁孩肚子餓了,但是我不想算數學</p>
+
+    <section class="card">
+      <label>
+        高年級學生數量
+        <input type="number" id="seniorStudents" min="0" placeholder="例如：20">
+      </label>
+
+      <label>
+        低年級學生數量(半份)
+        <input type="number" id="juniorStudents" min="0" placeholder="例如：15">
+      </label>
+
+      <label>
+        老師數量
+        <input type="number" id="teachers" min="0" placeholder="例如：3">
+      </label>
+
+      <label>
+        便當單價
+        <input type="number" id="price" min="0" placeholder="例如：110">
+      </label>
+
+      <label>
+        預留便當數量(可選)
+        <input type="number" id="extraLunches" min="0" value="0">
+      </label>
+
+      <button id="calculateBtn">計算</button>
+    </section>
+
+    <section class="result">
+      <h2>計算結果</h2>
+      <p>預計便當數量：<span id="totalLunches">0</span> 個</p>
+      <p>預計總金額：$<span id="totalPrice">0</span></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
