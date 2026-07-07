@@ -18,9 +18,8 @@ function calculateLunches() {
   const teachers = Number(teacherInput.value) || 0;
   const price = Number(priceInput.value) || 0;
   const extraLunches = Number(extraInput.value) || 0;
-
-  const totalLunches =
-    seniorStudents + juniorStudents + teachers + extraLunches;
+  const juniorLunches = Math.ceil(juniorStudents / 2);
+  const totalLunches = seniorStudents + juniorLunches + teachers + extraLunches;
   const totalPrice = totalLunches * price;
 
   totalLunchesResult.textContent = totalLunches;
@@ -34,7 +33,18 @@ function clearForm() {
 
   calculateLunches();
 }
- 
+
+function savePrice() {
+  const price = priceInput.value;
+  localStorage.setItem("price", price);
+}
+
+function loadSavedPrice() {
+  const savedPrice = localStorage.getItem("price");
+  if (savedPrice) {
+    priceInput.value = savedPrice;
+  }
+}
 
 calculateBtn.addEventListener("click", calculateLunches);
 clearBtn.addEventListener("click", clearForm);
@@ -42,3 +52,6 @@ clearBtn.addEventListener("click", clearForm);
 inputs.forEach((input) => {
   input.addEventListener("input", calculateLunches);
 });
+
+priceInput.addEventListener("input", savePrice);
+loadSavedPrice();
