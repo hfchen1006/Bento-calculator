@@ -2,7 +2,7 @@
 
 A lightweight web application designed to help cram schools quickly calculate lunch orders before entering them into their official system.
 
-This project was created to solve a real-world problem for a friend who works at a cram school. The tool helps staff calculate lunch quantities, estimate costs, remember common settings, and will continue evolving based on real user feedback.
+This project was created to solve a real-world problem for a friend who works at a cram school. Instead of manually calculating lunch orders every day, the application provides instant calculations, remembers frequently used settings, and continues evolving based on real user feedback.
 
 ---
 
@@ -10,6 +10,31 @@ This project was created to solve a real-world problem for a friend who works at
 
 **Live Website:**  
 https://hfchen1006.github.io/Bento-calculator/
+
+---
+
+## 📌 Project Background
+
+This project is used internally by a cram school to simplify the daily lunch ordering process.
+
+The application helps staff quickly calculate lunch quantities and estimate costs before entering the final order into the school's official management system.
+
+The project is also part of my web development learning journey, where every new feature is developed based on conversations with the end user.
+
+---
+
+## 🎯 Project Goal
+
+The goal of Bento Calculator is **not to replace the school's official management system**.
+
+Instead, it serves as a lightweight workspace that helps staff:
+
+- Quickly calculate lunch orders.
+- Remember frequently used settings.
+- (Upcoming) Temporarily save lunch order records.
+- (Upcoming) Record optional notes for special lunch orders.
+
+Every feature is added only after understanding the user's real workflow and solving a real problem.
 
 ---
 
@@ -45,14 +70,17 @@ https://hfchen1006.github.io/Bento-calculator/
   - Whether too much food was ordered
   - Reminders for future orders
 
+### Statistics
+
+- Daily summary.
+- Weekly summary.
+- Weekly reimbursement report.
+
 ### Future Improvements
 
-- Daily summary
-- Weekly summary
-- Weekly reimbursement report
-- Export records to Excel
-- Responsive mobile layout
-- UI improvements
+- Export records to Excel.
+- Responsive mobile layout.
+- UI improvements.
 
 ---
 
@@ -84,18 +112,21 @@ Through this project I practiced:
 - Git workflow
 - GitHub Pages deployment
 - Product requirement analysis
+- User requirement gathering
 - Version management using Semantic Versioning
 
 ---
 
-## 📌 Project Philosophy
+## 💡 Development Philosophy
 
-This project is developed based on real user feedback.
+> **Build it well, not just build it.**
 
-Every feature should solve a real workflow problem instead of being added only for practice.
+Every feature in this project begins with understanding the user's workflow before writing code.
+
+The focus is not to build the most feature-rich application, but to build a tool that people genuinely enjoy using in their daily work.
 
 ---
 
 ## 👨‍💻 Author
 
-Frank Chen
+**Frank Chen**
