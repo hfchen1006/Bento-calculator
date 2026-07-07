@@ -151,3 +151,17 @@ button:hover {
   color: #666;
   font-size: 14px;
 }
+
+.record-note {
+  display: flex;
+  gap: 12px;
+  padding: 12px 0;
+  border-top: 1px solid #eee;
+}
+
+.record-note p {
+  margin-top: 4px;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+}

@@ -41,34 +41,37 @@ Every feature is added only after understanding the user's real workflow and sol
 
 ## ✨ Current Features
 
+### Lunch Calculator
+
 - Calculate the required number of lunch boxes.
 - Junior students count as **half a lunch**, rounded up using `Math.ceil()`.
 - Display the total number of students.
 - Calculate the total lunch cost.
 - Automatically update results while typing.
 - Clear all input fields.
-- Save user settings with `localStorage`.
+
+### User Settings
+
+- Save default price and student/teacher counts using `localStorage`.
 - Automatically restore saved settings when the page loads.
-- Save each calculation as a recent record.
+
+### Recent Records
+
+- Save each lunch calculation as an individual record.
 - Display recent lunch order records.
-- Keep records after refreshing the page using `localStorage`.
-- Show the newest record at the top.
+- Automatically restore saved records after refreshing the page.
+- Show the newest records at the top.
+
+### Order Notes
+
+- Add notes to each saved record.
+- Edit notes at any time.
+- Save notes using `localStorage`.
+- Display notes inside each Record Card.
 
 ---
 
 ## 🚀 Planned Features
-
-
-### Order Notes
-
-- Add optional notes to each saved order record.
-- Notes are written after the meal if needed.
-- Each order record has its own notes field.
-- Notes can be used to record:
-  - What was ordered
-  - Special meals
-  - Whether too much food was ordered
-  - Reminders for future orders
 
 ### Statistics
 

@@ -9,8 +9,22 @@ All notable changes to this project will be documented here.
 ### Planned
 
 - Keep saved records for 30 days.
-- Optional notes for each saved order record.
 - Daily and weekly summaries.
+---
+
+## v2.1.0 - Order Notes
+
+### Added
+
+- Added notes for each saved record.
+- Added "Add Note" and "Edit Note" actions.
+- Notes are saved with each individual record.
+- Notes persist using localStorage.
+- Display notes in each Record Card.
+
+### Changed
+
+- Improved Record Card layout with a dedicated Notes section.
 
 ---
 

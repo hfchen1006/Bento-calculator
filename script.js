@@ -98,6 +98,8 @@ function createRecord() {
     totalStudents,
     totalLunches,
     totalPrice,
+
+    note: "",
   };
 
   return record;
@@ -155,12 +157,30 @@ function renderRecords(records) {
           <span class="record-icon">📦</span>
           <strong>${record.totalLunches} 個便當</strong>
         </div>
-
+      
         <div class="record-row">
           <span class="record-icon">💰</span>
           <strong>$${record.totalPrice.toLocaleString()}</strong>
         </div>
+
+        <div class="record-note">
+          <span class="record-icon">📝</span>
+          <div>
+            <strong>備註</strong>
+            <p>${record.note ? escapeHTML(record.note) : "尚未新增備註"}</p>
+          </div>
+        </div>
       `;
+
+      const addNoteBtn = document.createElement("button");
+
+      addNoteBtn.textContent = record.note ? "編輯備註" : "新增備註";
+
+      addNoteBtn.addEventListener("click", () => {
+        addNote(record.id);
+      });
+
+      recordCard.appendChild(addNoteBtn);
 
       recordsList.appendChild(recordCard);
     });
@@ -171,6 +191,33 @@ function loadRecords() {
   const records = savedRecords ? JSON.parse(savedRecords) : [];
 
   renderRecords(records);
+}
+
+function addNote(recordId) {
+  
+  const savedRecords = localStorage.getItem("records");
+  const records = savedRecords ? JSON.parse(savedRecords) : [];
+
+  const record = records.find((r) => r.id === recordId);
+  if (!record) return;
+
+  const note = prompt("請輸入備註：", record.note || "");
+  if (note === null) return;
+
+  record.note = note;
+
+  localStorage.setItem("records", JSON.stringify(records));
+
+  renderRecords(records);
+}
+
+function escapeHTML(text) {
+  return String(text)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
 }
 
 calculateBtn.addEventListener("click", calculateLunches);

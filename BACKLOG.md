@@ -38,25 +38,25 @@ This document tracks completed milestones, planned features, and future ideas fo
 - [x] Record Card UI.
 - [x] Automatically clear the form after saving a record.
 
+## v2.1.0 – Order Notes
+
+- [x] Add optional notes to each record.
+- [x] Allow notes to be added after the meal.
+- [x] Display notes inside each Record Card.
+
 ---
 
 # 🚧 In Progress
-
-## v2.1.0 – Order Notes
-
-- [ ] Add optional notes to each record.
-- [ ] Allow notes to be added after the meal.
-- [ ] Display notes inside each Record Card.
-
----
-
-# 📋 Planned
 
 ## v2.2.0 – Record Management
 
 - [ ] Edit existing records.
 - [ ] Delete records.
 - [ ] Confirmation dialog before deleting a record.
+
+---
+
+# 📋 Planned
 
 ## v2.3.0 – Statistics
 
