@@ -4,10 +4,12 @@ const teacherInput = document.getElementById("teachers");
 const priceInput = document.getElementById("price");
 const extraInput = document.getElementById("extraLunches");
 
+
 const calculateBtn = document.getElementById("calculateBtn");
 const clearBtn = document.getElementById("clearBtn");
 
 const totalLunchesResult = document.getElementById("totalLunches");
+const totalStudentsResult = document.getElementById("totalStudents");
 const totalPriceResult = document.getElementById("totalPrice");
 
 const inputs = [seniorInput, juniorInput, teacherInput, priceInput, extraInput];
@@ -21,8 +23,10 @@ function calculateLunches() {
   const juniorLunches = Math.ceil(juniorStudents / 2);
   const totalLunches = seniorStudents + juniorLunches + teachers + extraLunches;
   const totalPrice = totalLunches * price;
+  const totalStudents = seniorStudents + juniorStudents;
 
   totalLunchesResult.textContent = totalLunches;
+  totalStudentsResult.textContent = totalStudents;
   totalPriceResult.textContent = totalPrice.toLocaleString();
 }
 
