@@ -136,8 +136,11 @@ function renderRecords(records) {
 
       recordCard.innerHTML = `
         <div class="record-header">
-          <span>🕒 ${record.time}</span>
-          <span>📅 ${record.date}</span>
+          <div class="record-meta">
+            <span>🕒 ${record.time}</span>
+            <span>📅 ${record.date}</span>
+          </div>
+          <div class="record-actions"></div>
         </div>
 
         <div class="record-meal">
@@ -171,8 +174,18 @@ function renderRecords(records) {
           </div>
         </div>
       `;
-
+      const recordActions = recordCard.querySelector(".record-actions");
       const addNoteBtn = document.createElement("button");
+      const deleteBtn = document.createElement("button");
+      deleteBtn.classList.add("delete-record-btn");
+      deleteBtn.textContent = "🗑️";
+      deleteBtn.title = "刪除紀錄";
+
+      deleteBtn.addEventListener("click", () => {
+        deleteRecord(record.id);
+      });
+
+      recordActions.appendChild(deleteBtn);
 
       addNoteBtn.textContent = record.note ? "編輯備註" : "新增備註";
 
@@ -209,6 +222,21 @@ function addNote(recordId) {
   localStorage.setItem("records", JSON.stringify(records));
 
   renderRecords(records);
+}
+
+function deleteRecord(recordId) {
+  if (!confirm("確定要刪除此紀錄嗎？")) {
+    return;
+  }
+
+  const savedRecords = localStorage.getItem("records");
+  const records = savedRecords ? JSON.parse(savedRecords) : [];
+
+  const updatedRecords = records.filter((r) => r.id !== recordId);
+
+  localStorage.setItem("records", JSON.stringify(updatedRecords));
+
+  renderRecords(updatedRecords);
 }
 
 function escapeHTML(text) {

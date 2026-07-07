@@ -44,15 +44,18 @@ This document tracks completed milestones, planned features, and future ideas fo
 - [x] Allow notes to be added after the meal.
 - [x] Display notes inside each Record Card.
 
+## v2.2.0 – Record Management
+
+- [x] Delete individual records.
+- [x] Confirmation dialog before deleting.
+- [x] Added Record Actions area.
+- [x] Improved delete button UI.
+
 ---
 
 # 🚧 In Progress
 
-## v2.2.0 – Record Management
-
-- [ ] Edit existing records.
-- [ ] Delete records.
-- [ ] Confirmation dialog before deleting a record.
+_No active development._
 
 ---
 
@@ -71,6 +74,12 @@ This document tracks completed milestones, planned features, and future ideas fo
 - [ ] Filter records by date.
 - [ ] Filter records by meal type.
 - [ ] Quickly search previous records.
+
+## v2.5.0 – Edit Records
+
+- [ ] Edit existing records.
+- [ ] Automatically recalculate totals after editing.
+- [ ] Update the Record Card immediately after saving changes.
 
 ---
 
@@ -106,4 +115,4 @@ These ideas are intentionally not scheduled yet.
 - [x] Extra lunches should not be remembered.
 - [x] Clear Form should clear all fields after saving.
 - [ ] Should meal type default to Lunch?
-- [ ] Should records expire after 30 days or be kept forever?
+- [x] Should records expire after 30 days or be kept forever?

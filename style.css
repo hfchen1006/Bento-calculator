@@ -116,14 +116,6 @@ button:hover {
   background: #ffffff;
 }
 
-.record-header {
-  display: flex;
-  justify-content: space-between;
-  color: #666;
-  font-size: 14px;
-  margin-bottom: 15px;
-}
-
 .record-meal {
   display: flex;
   align-items: center;
@@ -164,4 +156,41 @@ button:hover {
   color: #666;
   font-size: 14px;
   line-height: 1.5;
+}
+
+.record-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.record-meta {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.record-actions {
+  display: flex;
+  align-items: center;
+}
+
+.delete-record-btn {
+  width: auto;
+  padding: 2px 4px;
+  background: transparent;
+  color: #666;
+  font-size: 16px;
+  line-height: 1;
+  border-radius: 6px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.delete-record-btn:hover {
+  background: #f3f4f6;
+  color: #dc2626;
 }

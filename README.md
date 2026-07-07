@@ -61,6 +61,7 @@ Every feature is added only after understanding the user's real workflow and sol
 - Display recent lunch order records.
 - Automatically restore saved records after refreshing the page.
 - Show the newest records at the top.
+- Delete individual records.
 
 ### Order Notes
 

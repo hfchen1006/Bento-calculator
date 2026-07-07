@@ -10,6 +10,22 @@ All notable changes to this project will be documented here.
 
 - Keep saved records for 30 days.
 - Daily and weekly summaries.
+
+---
+
+## v2.2.0 - Record Management
+
+### Added
+
+- Added the ability to delete individual records.
+- Added a confirmation dialog before deleting a record.
+- Introduced a Record Actions area in the Record Card header.
+
+### Changed
+
+- Moved record actions to the top-right corner of each Record Card.
+- Improved the delete button styling for a cleaner interface.
+
 ---
 
 ## v2.1.0 - Order Notes
