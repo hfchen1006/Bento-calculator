@@ -78,3 +78,20 @@ button:hover {
     font-weight: bold;
     color: #2563eb;
 }
+
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+.button-group button {
+    flex: 1;
+}
+
+#clearBtn {
+    background-color: #6b7280;
+}
+
+#clearBtn:hover {
+    background-color: #4b5563;
+}
